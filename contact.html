@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>联系我们 | 北京乐听声动科技有限公司</title>
+    <meta
+      name="description"
+      content="联系北京乐听声动科技有限公司，获取技术支持与商务合作信息。"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="page">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="brand" aria-label="北京乐听声动科技有限公司">
+          <div class="brand-logo">
+            <!-- 将公司 logo 文件命名为 logo.jpg 并放在 assets 目录下即可替换此位置 -->
+            <img src="assets/logo.jpg" alt="北京乐听声动科技有限公司 Logo" />
+          </div>
+          <div>
+            <div class="brand-text-main">乐听声动</div>
+            <div class="brand-text-sub">北京乐听声动科技有限公司</div>
+          </div>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a class="nav-link" href="index.html">
+            <span class="dot"></span>
+            <span class="label">首页</span>
+          </a>
+          <a class="nav-link" href="about.html">
+            <span class="dot"></span>
+            <span class="label">关于我们</span>
+          </a>
+          <a class="nav-link" href="products.html">
+            <span class="dot"></span>
+            <span class="label">产品与技术</span>
+          </a>
+          <a class="nav-link" href="solutions.html">
+            <span class="dot"></span>
+            <span class="label">行业解决方案</span>
+          </a>
+          <a class="nav-link" href="contact.html">
+            <span class="dot"></span>
+            <span class="label">联系我们</span>
+          </a>
+        </nav>
+        <a class="nav-cta" href="contact.html">
+          <span class="dot"></span>
+          <span>立即联络</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="展开导航菜单">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-inner">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">联系我们</h1>
+            <p class="section-subtitle">留下需求，我们会尽快回复。</p>
+          </div>
+          <div class="section-tag">CONTACT</div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h2 class="feature-title">联系信息</h2>
+            <div class="contact-row">
+              <div class="contact-label">公司名称</div>
+              <div>北京乐听声动科技有限公司</div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label">商务合作</div>
+              <div>business@示例域名.com</div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label">技术支持</div>
+              <div>support@示例域名.com</div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label">联系电话</div>
+              <div>010-0000 0000（工作日 10:00–18:00）</div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label">公司地址</div>
+              <div>北京市（此处可替换为实际办公地址）</div>
+            </div>
+            <p class="contact-note">
+              上述邮箱和电话为示例信息，可根据实际情况替换为正式对外联系方式。
+              如需微信、公众号或地图定位，可后续补充二维码与地图组件。
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h2 class="feature-title">在线留言</h2>
+            <p class="section-subtitle" style="margin-bottom: 10px">
+              请简单描述您的业务场景与需求，我们会在 1 个工作日内与您取得联系。
+            </p>
+            <form id="contact-form" class="contact-form">
+              <div class="field-group">
+                <label class="field-label" for="name">
+                  您的称呼 <span>*</span>
+                </label>
+                <input
+                  class="field-input"
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="例如：张先生 / 李女士 / 公司名称"
+                  required
+                />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="email">
+                  联系方式 <span>*</span>
+                </label>
+                <input
+                  class="field-input"
+                  id="email"
+                  name="email"
+                  type="text"
+                  placeholder="邮箱或电话号码，便于我们回访"
+                  required
+                />
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="message">
+                  项目/需求简要说明 <span>*</span>
+                </label>
+                <textarea
+                  class="field-textarea"
+                  id="message"
+                  name="message"
+                  placeholder="例如：智能音箱远场语音方案评估；车载座舱空间音频方案咨询；现有产品降噪效果优化等。"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-footer">
+                <button type="submit" class="btn-primary">提交留言</button>
+                <div id="form-status" class="form-status"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© <span id="year-span">2024</span> 北京乐听声动科技有限公司</div>
+      <div class="footer-links">
+        <a href="about.html">公司简介</a>
+        <a href="products.html">产品与技术</a>
+        <a href="solutions.html">行业方案</a>
+      </div>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+    <script>
+      document.getElementById("year-span").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
