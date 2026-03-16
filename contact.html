@@ -59,37 +59,55 @@
     </header>
 
     <main class="page-inner">
+      <!-- 页面头部 -->
       <section class="section">
         <div class="section-header">
-          <div>
-            <h1 class="section-title">联系我们</h1>
-            <p class="section-subtitle">留下需求，我们会尽快回复。</p>
-          </div>
-          <div class="section-tag">CONTACT</div>
+          <h1 class="section-title">联系我们</h1>
+          <p class="section-subtitle">留下需求，我们会在 1 个工作日内与您取得联系</p>
         </div>
+      </section>
 
+      <!-- 联系信息 -->
+      <section class="section">
         <div class="contact-grid">
           <div class="contact-card">
             <h2 class="feature-title">联系信息</h2>
-            <div class="contact-row">
-              <div class="contact-label">公司名称</div>
-              <div>北京乐听声动科技有限公司</div>
-            </div>
-            <div class="contact-row">
-              <div class="contact-label">商务合作</div>
-              <div>business@示例域名.com</div>
-            </div>
-            <div class="contact-row">
-              <div class="contact-label">技术支持</div>
-              <div>support@示例域名.com</div>
-            </div>
-            <div class="contact-row">
-              <div class="contact-label">联系电话</div>
-              <div>010-0000 0000（工作日 10:00–18:00）</div>
-            </div>
-            <div class="contact-row">
-              <div class="contact-label">公司地址</div>
-              <div>北京市（此处可替换为实际办公地址）</div>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">🏢</div>
+                <div>
+                  <div class="contact-label">公司名称</div>
+                  <div class="contact-value">北京乐听声动科技有限公司</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">💼</div>
+                <div>
+                  <div class="contact-label">商务合作</div>
+                  <div class="contact-value">business@示例域名.com</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">🛠️</div>
+                <div>
+                  <div class="contact-label">技术支持</div>
+                  <div class="contact-value">support@示例域名.com</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <div class="contact-label">联系电话</div>
+                  <div class="contact-value">010-0000 0000（工作日 10:00–18:00）</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <div class="contact-label">公司地址</div>
+                  <div class="contact-value">北京市（此处可替换为实际办公地址）</div>
+                </div>
+              </div>
             </div>
             <p class="contact-note">
               上述邮箱和电话为示例信息，可根据实际情况替换为正式对外联系方式。
@@ -99,7 +117,7 @@
 
           <div class="contact-card">
             <h2 class="feature-title">在线留言</h2>
-            <p class="section-subtitle" style="margin-bottom: 10px">
+            <p class="section-subtitle" style="margin-bottom: 24px">
               请简单描述您的业务场景与需求，我们会在 1 个工作日内与您取得联系。
             </p>
             <form id="contact-form" class="contact-form">
@@ -117,7 +135,7 @@
                 />
               </div>
 
-              <div class="field-group">
+              <div class="field-group" style="margin-top: 16px;">
                 <label class="field-label" for="email">
                   联系方式 <span>*</span>
                 </label>
@@ -131,7 +149,7 @@
                 />
               </div>
 
-              <div class="field-group">
+              <div class="field-group" style="margin-top: 16px;">
                 <label class="field-label" for="message">
                   项目/需求简要说明 <span>*</span>
                 </label>
@@ -144,11 +162,38 @@
                 ></textarea>
               </div>
 
-              <div class="form-footer">
+              <div class="form-footer" style="margin-top: 24px;">
                 <button type="submit" class="btn-primary">提交留言</button>
                 <div id="form-status" class="form-status"></div>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- 常见问题 -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">常见问题</h2>
+          <p class="section-subtitle">您可能关心的问题</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3 class="faq-question">如何获取产品白皮书？</h3>
+            <p class="faq-answer">您可以通过在线留言或直接联系我们的商务邮箱，我们会在收到请求后 1 个工作日内发送产品白皮书。</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">技术方案如何评估？</h3>
+            <p class="faq-answer">我们提供免费的技术方案评估服务，您可以通过在线留言或电话联系我们，详细描述您的需求，我们会安排技术专家与您沟通。</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">合作流程是怎样的？</h3>
+            <p class="faq-answer">合作流程包括需求沟通、方案设计、验证测试、工程集成和交付维护等阶段，具体可参考我们的行业解决方案页面。</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">是否提供定制化服务？</h3>
+            <p class="faq-answer">是的，我们提供定制化的技术解决方案，根据客户的具体需求和场景进行定制开发。</p>
           </div>
         </div>
       </section>
