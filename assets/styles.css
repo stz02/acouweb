@@ -235,8 +235,7 @@ img {
   position: relative;
   height: 70vh;
   min-height: 500px;
-  background: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=acoustic%20technology%20smart%20sensing%20drone%20industrial%20detection%20modern%20tech%20white%20background%20clean%20minimalist%20design&image_size=landscape_16_9') no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   border-radius: 24px;
   margin: 40px 0;
   overflow: hidden;
@@ -321,18 +320,42 @@ img {
 }
 
 .product-card:nth-child(1) .product-image {
-  background: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=UAV%20drone%20smart%20sensing%20system%20aerial%20technology%20modern%20clean%20white%20background&image_size=square') no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.product-card:nth-child(1) .product-image::before {
+  content: '🚁';
 }
 
 .product-card:nth-child(2) .product-image {
-  background: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=industrial%20acoustic%20detection%20equipment%20sound%20analysis%20technology%20modern%20clean%20white%20background&image_size=square') no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.product-card:nth-child(2) .product-image::before {
+  content: '🔍';
 }
 
 .product-card:nth-child(3) .product-image {
-  background: url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=psychoacoustics%20evaluation%20sound%20quality%20analysis%20audio%20technology%20modern%20clean%20white%20background&image_size=square') no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.product-card:nth-child(3) .product-image::before {
+  content: '🔊';
 }
 
 .product-title {
