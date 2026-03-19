@@ -83,9 +83,9 @@ img {
 }
 
 .brand-logo {
-  width: 34px;
-  height: 34px;
-  border-radius: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
   overflow: hidden;
   border: 1px solid rgba(148, 163, 184, 0.35);
   background: #020617;
@@ -100,7 +100,7 @@ img {
 }
 
 .brand-text-main {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -108,7 +108,7 @@ img {
 }
 
 .brand-text-sub {
-  font-size: 11px;
+  font-size: 13px;
   color: #9ca3af;
 }
 
@@ -2097,6 +2097,210 @@ body {
   .nav-toggle {
     width: 36px;
     height: 36px;
+  }
+}
+
+/* 移动端优化 - 确保手机端正常显示 */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  .page-inner {
+    padding: 0 16px 32px;
+    width: 100%;
+  }
+  
+  .navbar-inner {
+    padding: 12px 16px;
+    width: 100%;
+  }
+  
+  .brand-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+  }
+  
+  .brand-text-main {
+    font-size: 18px;
+  }
+  
+  .section {
+    margin-top: 40px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .section-subtitle {
+    font-size: 14px;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .product-image {
+    height: 180px;
+  }
+  
+  .product-title {
+    font-size: 17px;
+    margin: 16px;
+  }
+  
+  .product-desc {
+    font-size: 14px;
+    margin: 0 16px 16px;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .feature-card {
+    padding: 20px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+  }
+  
+  .feature-desc {
+    font-size: 14px;
+  }
+  
+  .hero-banner {
+    height: 45vh;
+    min-height: 280px;
+    margin: 16px 0;
+    border-radius: 12px;
+  }
+  
+  .hero-banner-actions {
+    gap: 12px;
+  }
+  
+  .btn-primary,
+  .btn-ghost {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .kpi-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .kpi-card {
+    padding: 16px;
+  }
+  
+  .kpi-label {
+    font-size: 12px;
+  }
+  
+  .kpi-value {
+    font-size: 24px;
+  }
+  
+  .kpi-extra {
+    font-size: 12px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .footer-links a {
+    font-size: 13px;
+  }
+}
+
+/* 小屏幕手机优化 */
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .brand-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+  }
+  
+  .brand-text-main {
+    font-size: 16px;
+  }
+  
+  .hero-banner {
+    height: 40vh;
+    min-height: 240px;
+  }
+  
+  .product-image {
+    height: 160px;
+  }
+  
+  .btn-primary,
+  .btn-ghost {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* 平板优化 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .page-inner {
+    padding: 0 24px 48px;
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-banner {
+    height: 55vh;
+    min-height: 380px;
+  }
+}
+
+/* 桌面端优化 */
+@media (min-width: 1025px) {
+  .page-inner {
+    max-width: 1280px;
+  }
+  
+  .navbar-inner {
+    max-width: 1280px;
+  }
+  
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
