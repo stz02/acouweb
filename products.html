@@ -31,10 +31,6 @@
             <span class="dot"></span>
             <span class="label">首页</span>
           </a>
-          <a class="nav-link" href="about.html">
-            <span class="dot"></span>
-            <span class="label">关于我们</span>
-          </a>
           <a class="nav-link" href="products.html">
             <span class="dot"></span>
             <span class="label">产品与技术</span>
@@ -42,6 +38,10 @@
           <a class="nav-link" href="solutions.html">
             <span class="dot"></span>
             <span class="label">行业解决方案</span>
+          </a>
+          <a class="nav-link" href="about.html">
+            <span class="dot"></span>
+            <span class="label">关于我们</span>
           </a>
           <a class="nav-link" href="contact.html">
             <span class="dot"></span>
@@ -63,7 +63,7 @@
       <section class="section">
         <div class="section-header">
           <h1 class="section-title">产品与技术</h1>
-          <p class="section-subtitle">模块化能力，按场景交付，为客户提供从算法到系统的整体解决方案</p>
+          <span class="section-badge">模块化能力，按场景交付，为客户提供从算法到系统的整体解决方案</span>
         </div>
       </section>
 
@@ -73,26 +73,36 @@
           <div class="product-card">
             <a href="product-detail.html" class="product-card-link">
               <div class="product-image" style="background: url('assets/images/xyz-array.png') no-repeat center center; background-size: cover;"></div>
-              <h3 class="product-title">XYZ 轴立体声阵列</h3>
-              <p class="product-desc">多通道高精度声源定位系统，基于先进声纹算法与波束成形技术，可实时捕获并解析空间声场，广泛应用于无人机探测、工业异常声源定位等场景。</p>
+              <h3 class="product-title">三维空间视声立体阵</h3>
+              <p class="product-desc">具备三维空间定位能力的视声融合立体阵列系统，集成空间坐标标定、多通道信号同步与视声信息融合技术，实现高精度声源定位与空间声场解析，广泛应用于无人机探测、工业异常声源定位等场景。</p>
               <div class="product-features">
-                <span class="pill">128 通道</span>
-                <span class="pill">声源定位</span>
-                <span class="pill">远场探测</span>
+                <span class="pill">空间坐标标定</span>
+                <span class="pill">多通道同步</span>
+                <span class="pill">视声融合</span>
               </div>
             </a>
           </div>
           <div class="product-card">
             <a href="product-imager.html" class="product-card-link">
               <div class="product-image" style="background: url('assets/images/imager.png') no-repeat center center; background-size: 80%; background-color: #ffffff;"></div>
-              <h3 class="product-title">声学成像仪</h3>
-              <p class="product-desc">便携式声学成像设备，用于工业异常放电、气体泄漏检测及局部放电定位。通过高灵敏度麦克风阵列和波束成形技术，将声音转化为直观图像，快速定位故障点。</p>
+              <h3 class="product-title">声学成像仪定制算法开发</h3>
+              <p class="product-desc">针对声学成像仪的定制化算法研发服务，涵盖算法设计、模型训练与性能优化等技术环节，为工业异常放电、气体泄漏检测及局部放电定位提供专业算法解决方案。</p>
               <div class="product-features">
-                <span class="pill">泄漏检测</span>
-                <span class="pill">局部放电</span>
-                <span class="pill">实时成像</span>
+                <span class="pill">算法设计</span>
+                <span class="pill">模型训练</span>
+                <span class="pill">性能优化</span>
               </div>
             </a>
+          </div>
+          <div class="product-card">
+            <div class="product-image" style="background: url('assets/images/acoustic-source.png') no-repeat center center; background-size: cover;"></div>
+            <h3 class="product-title">声学模拟源</h3>
+            <p class="product-desc">覆盖 10 Hz–15 kHz 全频响应，精准还原无人机、工业机械及环境噪声的声学特征。支持实时波形与频谱分析，为声学测试、算法验证及设备标定提供高保真模拟信号源。</p>
+            <div class="product-features">
+              <span class="pill">全频响应</span>
+              <span class="pill">波形分析</span>
+              <span class="pill">频谱分析</span>
+            </div>
           </div>
           <div class="product-card">
             <div class="product-image" style="background: url('assets/images/uav-perception.png') no-repeat center center; background-size: cover;"></div>
@@ -121,30 +131,21 @@
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">技术特点</h2>
-          <p class="section-subtitle">我们关注的不仅是算法指标，更关注在真实场景与硬件约束下的鲁棒性和可落地性</p>
+          <span class="section-badge">我们关注的不仅是算法指标，更关注在真实场景与硬件约束下的鲁棒性和可落地性</span>
         </div>
 
         <div class="two-col">
           <div>
             <div class="feature-card">
-              <h3 class="feature-title">工程友好</h3>
+              <h3 class="feature-title">技术特点</h3>
               <p class="feature-desc">
-                所有核心模块都可在资源受限的平台上运行，明确 CPU、内存和延时指标，
-                提供参考工程与调试工具，降低集成成本。
+                <strong>工程友好：</strong>所有核心模块都可在资源受限的平台上运行，明确 CPU、内存和延时指标，提供参考工程与调试工具，降低集成成本。
               </p>
-            </div>
-            <div class="feature-card" style="margin-top: 24px">
-              <h3 class="feature-title">真实场景验证</h3>
               <p class="feature-desc">
-                针对会议室、客厅、车内、展馆等典型场景，建立测试数据与主观评价流程，
-                确保算法能力不仅存在于实验室 Demo 中。
+                <strong>真实场景验证：</strong>针对会议室、客厅、车内、展馆等典型场景，建立测试数据与主观评价流程，确保算法能力不仅存在于实验室 Demo 中。
               </p>
-            </div>
-            <div class="feature-card" style="margin-top: 24px">
-              <h3 class="feature-title">定制化能力</h3>
               <p class="feature-desc">
-                根据客户具体场景和需求，提供定制化的算法和系统解决方案，
-                确保技术能够真正解决实际问题。
+                <strong>定制化能力：</strong>根据客户具体场景和需求，提供定制化的算法和系统解决方案，确保技术能够真正解决实际问题。
               </p>
             </div>
           </div>
@@ -193,7 +194,7 @@
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">技术优势</h2>
-          <p class="section-subtitle">我们的核心技术优势</p>
+          <span class="section-badge">我们的核心技术优势</span>
         </div>
 
         <div class="feature-grid">
