@@ -293,12 +293,12 @@ img {
   font-weight: 800;
   font-family: 'Helvetica Neue', 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #000000;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   line-height: 1.2;
-  padding: 12px 24px;
-  background: rgba(255, 255, 255, 0.5);
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -330,7 +330,7 @@ img {
 
 .hero-banner-actions {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
 }
