@@ -38,9 +38,35 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      statusEl.textContent = "信息已收录，我们会在1个工作日内联系您。";
+      statusEl.textContent = "信息已收录，我们会在 1 个工作日内联系您。";
       statusEl.style.color = "#4ade80";
       contactForm.reset();
+    });
+  }
+
+  // 懒加载背景图片
+  const lazyImages = document.querySelectorAll(".product-image[data-src]");
+  if ("IntersectionObserver" in window && lazyImages.length > 0) {
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          let img = entry.target;
+          img.style.backgroundImage = `url('${img.dataset.src}')`;
+          img.style.backgroundRepeat = 'no-repeat';
+          img.style.backgroundPosition = 'center center';
+          img.style.backgroundSize = 'cover';
+          observer.unobserve(img);
+        }
+      });
+    });
+    lazyImages.forEach(img => observer.observe(img));
+  } else {
+    // 降级方案：直接加载
+    lazyImages.forEach(img => {
+      img.style.backgroundImage = `url('${img.dataset.src}')`;
+      img.style.backgroundRepeat = 'no-repeat';
+      img.style.backgroundPosition = 'center center';
+      img.style.backgroundSize = 'cover';
     });
   }
 });
