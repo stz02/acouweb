@@ -1619,6 +1619,18 @@ img {
   .hero-banner-actions {
     flex-direction: column;
     align-items: center;
+    margin-top: 24px;
+    gap: 16px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .btn-ghost {
+    padding: 9px 18px;
+    font-size: 12px;
   }
 
   .product-grid,
