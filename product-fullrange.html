@@ -150,22 +150,18 @@
             <h2 class="section-title">应用场景</h2>
             <div class="application-grid">
               <div class="application-card">
-                <div class="application-icon">🎛️</div>
                 <h3>传感器测试</h3>
                 <p>声学传感器的频率响应测试</p>
               </div>
               <div class="application-card">
-                <div class="application-icon">🔊</div>
                 <h3>噪声控制</h3>
                 <p>噪声控制产品的效果评估</p>
               </div>
               <div class="application-card">
-                <div class="application-icon">🧮</div>
                 <h3>算法研发</h3>
                 <p>音频算法（如降噪、识别）的研发与验证</p>
               </div>
               <div class="application-card">
-                <div class="application-icon">🎯</div>
                 <h3>系统标定</h3>
                 <p>声学测试、算法验证及设备标定</p>
               </div>
@@ -174,41 +170,13 @@
         </section>
       </main>
 
-      <footer class="site-footer">
-        <div class="footer-inner">
-          <div class="footer-grid">
-            <div class="footer-column">
-              <h4 class="footer-title">联系我们</h4>
-              <div class="footer-contact">
-                <div class="footer-contact-item">
-                  <span class="footer-icon">📍</span>
-                  <p>北京市北京经济技术开发区天宝园五里二区 2 号楼 1 层 01H015</p>
-                </div>
-                <div class="footer-contact-item">
-                  <span class="footer-icon">📧</span>
-                  <p><a href="mailto:ltsdkjyxgs@163.com">ltsdkjyxgs@163.com</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-title">快速链接</h4>
-              <ul class="footer-links">
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="products.html">产品与技术</a></li>
-                <li><a href="solutions.html">行业方案</a></li>
-                <li><a href="contact.html">联系我们</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4 class="footer-title">关注我们</h4>
-              <p class="footer-desc">了解更多声学技术资讯</p>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-bottom-inner">
-            <p>&copy; 2025 乐听声动。All rights reserved.</p>
-          </div>
+      <footer class="footer">
+        <div>© <span id="year-span">2025</span> 北京乐听声动科技有限公司</div>
+        <div class="footer-links">
+          <a href="about.html">公司简介</a>
+          <a href="products.html">技术与产品</a>
+          <a href="solutions.html">行业解决方案</a>
+          <a href="contact.html">商务与合作</a>
         </div>
       </footer>
     </div>
@@ -289,6 +257,9 @@
           });
         }
       });
+      
+      // 更新页脚年份
+      document.getElementById("year-span").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
