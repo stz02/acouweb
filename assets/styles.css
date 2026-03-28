@@ -1441,7 +1441,7 @@ img {
 .btn-ghost {
   padding: 10px 20px;
   border-radius: calc(var(--radius) * 3);
-  border: 1px solid hsl(var(--border));
+  border: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 14px;
   color: hsl(var(--foreground));
   background: transparent;
@@ -1460,7 +1460,7 @@ img {
 
 .btn-ghost:hover {
   background: hsl(var(--secondary));
-  border-color: hsl(var(--border));
+  border-color: rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
 }
 
