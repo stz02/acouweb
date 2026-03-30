@@ -432,8 +432,9 @@ img {
 /* 大图 hero 区域 */
 .hero-banner {
   position: relative;
-  height: 80vh;
-  min-height: 500px;
+  height: 50vh;
+  min-height: 350px;
+  max-height: 700px;
   background: url('assets/images/drone-imager.jpg') no-repeat center center;
   background-size: cover;
   width: 100vw;
@@ -443,12 +444,27 @@ img {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: height 0.3s ease;
 }
 
 @media (min-width: 768px) {
   .hero-banner {
-    height: 85vh;
-    min-height: 600px;
+    height: 55vh;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-banner {
+    height: 60vh;
+    min-height: 450px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-banner {
+    height: 65vh;
+    min-height: 500px;
   }
 }
 
