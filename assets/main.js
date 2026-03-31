@@ -185,20 +185,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  // 首页大图根据窗口大小按比例缩放
-  const heroBanner = document.querySelector(".hero-banner");
-  if (heroBanner) {
-    const adjustHeroHeight = () => {
-      const width = window.innerWidth;
-      const baseHeight = Math.min(width * 0.45, 700);
-      const minHeight = Math.max(350, Math.min(width * 0.35, 500));
-      
-      heroBanner.style.height = `${baseHeight}px`;
-      heroBanner.style.minHeight = `${minHeight}px`;
-    };
-
-    adjustHeroHeight();
-    window.addEventListener("resize", adjustHeroHeight, { passive: true });
-  }
 });

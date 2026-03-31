@@ -432,9 +432,8 @@ img {
 /* 大图 hero 区域 */
 .hero-banner {
   position: relative;
-  height: 50vh;
-  min-height: 350px;
-  max-height: 700px;
+  height: 80vh;
+  min-height: 500px;
   background: url('assets/images/drone-imager.jpg') no-repeat center center;
   background-size: cover;
   width: 100vw;
@@ -444,27 +443,12 @@ img {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: height 0.3s ease;
 }
 
 @media (min-width: 768px) {
   .hero-banner {
-    height: 55vh;
-    min-height: 400px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-banner {
-    height: 60vh;
-    min-height: 450px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .hero-banner {
-    height: 65vh;
-    min-height: 500px;
+    height: 85vh;
+    min-height: 600px;
   }
 }
 
@@ -491,17 +475,20 @@ img {
   z-index: 2;
   text-align: center;
   max-width: 800px;
-  padding: 32px 24px;
+  padding: 36px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
   .hero-content {
-    padding: 40px 32px;
+    padding: 44px 32px;
   }
 }
 
 .hero-english-title {
-  font-size: clamp(28px, 6vw, 48px);
+  font-size: clamp(24px, 5vw, 40px);
   font-weight: 800;
   font-family: 'Helvetica Neue', 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
   color: hsl(var(--foreground));
@@ -509,7 +496,7 @@ img {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   line-height: 1.2;
-  padding: 8px 16px;
+  padding: 6px 16px;
   background: hsla(0, 0%, 100%, 0.5);
   border-radius: 8px;
   backdrop-filter: blur(8px);
@@ -520,6 +507,7 @@ img {
   position: relative;
   z-index: 3;
   border: 1px solid hsla(0, 0%, 0%, 0.08);
+  white-space: nowrap;
 }
 
 .hero-banner-title {
@@ -558,6 +546,8 @@ img {
   gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 0;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
